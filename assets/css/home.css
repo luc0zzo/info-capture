@@ -1,0 +1,159 @@
+body{
+    background-color: #333;
+    color: white;
+    scroll-behavior: smooth;
+    padding: 3%;
+    text-align: center;
+    margin: auto;
+}   
+
+/* TOP PART */
+
+.top{
+    margin-top: 0%;
+    height: 300px; 
+    position: sticky;
+    width:100%;
+}
+#title{
+    font-size: 60px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-family: RUBIK, sans-serif;
+    user-select: none;
+}
+
+
+#logoPage{
+    margin-left: 48%;
+    margin-right: 48%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+
+    /* antycopy */
+    user-select: none;
+}
+
+/* MAIN PART */
+.main{
+    margin-top: 40px;
+}
+
+/* paragraph part */
+#mainPart{
+    text-align: center;
+    justify-content: left;
+    letter-spacing: 2px;
+
+}
+p::first-letter{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+/* input style  MAIN PART*/
+
+form{
+display: grid;
+justify-content:center;
+text-align: center;
+font-size: 25px;
+font-family: ROBOTOMONO, sans-serif;
+text-transform:uppercase;
+letter-spacing: 0.4px;
+}
+
+input{
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 5px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+button{
+    width: 400px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.487);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+#send:hover{
+    cursor: pointer;
+}
+input #send{
+    font-size: 40px;
+}
+.sendButton{
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+}
+
+
+/* trasforma la prima lettera maiuscola */
+input::first-letter{
+    text-transform: uppercase;
+}
+
+/* FOOTER PART */
+footer{
+    position: fixed;
+    width: 90%;
+    bottom: 0;
+    padding: 10px;
+}
+footer p{
+    text-align: center;
+    margin-bottom: 0%;
+
+}
+footer p::first-letter{
+    text-transform: none;
+}
+footer a{
+    color:blueviolet;
+    text-decoration:none;
+    transition: 300ms ease-in-out;
+}
+footer a:hover{
+    color:rgb(162, 76, 243);
+    text-decoration:none;
+
+}
+#footerP::first-letter{
+    font-size:20px ;
+    text-transform: uppercase;
+}
+/* fonts */
+
+/* page title font */
+@font-face {
+    font-family: 'RUBIK';
+    src: url('../fonts/Rubik/static/Rubik-Bold.ttf');
+}
+
+/* paragraph font */ 
+@font-face {
+    font-family: ROBOTOMONO;
+    src: url('../fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf');
+}
+/* keyframes */
+
+
+
+/* media part */
+@media screen and (max-width: 320px) {
+   #mail{
+    width: 50px;
+   }
+  }

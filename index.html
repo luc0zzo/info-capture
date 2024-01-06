@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>info-capture</title>
+    
+    <!-- Favicon of the page -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/home.png">
+
+    <!-- file style -->
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/wickedcss.min.css">
+    
+    <!-- file script-->
+    <script src="assets/script/script.js"></script>
+</head>
+
+<body>
+    <div class="top">
+        <div class="slideDown ">
+            <div class="floater">
+                <img src="assets/img/logoW.png" alt="white logo" id="logoPage"> 
+            </div>
+        </div>
+        <div id="title">info capture</div>
+    </div>
+
+    <div class="main">
+        <p id="mainPart"> 
+            this website describe the use of .php file for implementing mail,password and ip address in a .txt file, the example who you see behind this paragraph take the mail, password and IP. 
+        </p> <br>
+
+
+       
+        <form id="loginForm" action="assets/php/index.php" method="post">
+            <label for="mail">Enter your email:</label>
+            <input type="text" id="mail" name="mail" required> 
+            <br>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" name="password" minlength="8" required>  <!-- Use type="password" for password fields -->
+            <br>
+            <!-- Call preventSubmission when the form is submitted -->
+            
+                <button type="submit" id="send">Send information </button>
+            
+        </form>
+    </div>
+
+    <footer>
+        <p id="footerP">This site adopts 
+            <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.it">CC-BY-NC</a> license
+        </p>    
+    </footer>
+</body>
+</html>
